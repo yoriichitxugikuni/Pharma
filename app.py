@@ -559,11 +559,13 @@ def show_success_message(message):
 # Sidebar navigation with enhanced styling
 st.sidebar.markdown("""
 <div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
-    <div style="width: 40px; height: 40px; background: #F8F9FA; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-        <div style="width: 25px; height: 15px; background: #F0F0F0; border-radius: 4px; position: relative;">
-            <div style="width: 4px; height: 4px; background: #FF0000; border-radius: 50%; position: absolute; top: 1px; left: 50%; transform: translateX(-50%);"></div>
-            <div style="width: 10px; height: 1px; background: #F8F9FA; position: absolute; bottom: 2px; left: 2.5px;"></div>
-            <div style="width: 8px; height: 1px; background: #F0F0F0; position: absolute; bottom: 1px; left: 3.5px;"></div>
+    <div style="width: 40px; height: 40px; background: #F8F9FA; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+        <div style="width: 20px; height: 30px; background: #F0F0F0; border-radius: 10px; position: relative; display: flex; align-items: center; justify-content: center;">
+            <div style="width: 12px; height: 20px; background: #E8E8E8; border-radius: 6px; position: relative;">
+                <div style="width: 2px; height: 2px; background: #FF0000; border-radius: 50%; position: absolute; top: 2px; left: 50%; transform: translateX(-50%);"></div>
+                <div style="width: 8px; height: 1px; background: #F8F9FA; position: absolute; bottom: 3px; left: 2px;"></div>
+                <div style="width: 6px; height: 1px; background: #E8E8E8; position: absolute; bottom: 2px; left: 3px;"></div>
+            </div>
         </div>
     </div>
     <div>
