@@ -1,0 +1,15 @@
+[server]
+headless = true
+port = 8080
+address = "0.0.0.0"
+maxUploadSize = 50
+runOnSave = false
+
+[client]
+showErrorDetails = false
+
+[theme]
+base = "light"
+
+[browser]
+gatherUsageStats = false

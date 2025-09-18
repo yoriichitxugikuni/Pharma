@@ -1,28 +1,53 @@
+# Environment variables
+.env
+.env.local
+.env.template
+
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Virtual envs
+# Virtual environments
 venv/
-MediManage/**/venv/
+env/
+ENV/
 
-# OS/IDE
-.DS_Store
-Thumbs.db
+# IDE
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# Build/cache
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
 *.log
-.cache/
 
-# Large local artifacts
-*.zip
-*.mp4
-*.pptx
-
-# Streamlit
-.streamlit/secrets.toml
-
+# Temporary files
+*.tmp
+*.temp

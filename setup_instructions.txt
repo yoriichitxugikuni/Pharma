@@ -1,0 +1,57 @@
+PHARMACEUTICAL INVENTORY MANAGEMENT SYSTEM - SETUP INSTRUCTIONS
+===============================================================
+
+PREREQUISITES:
+- Python 3.7+ installed on your system
+- VS Code or Cursor IDE
+
+SETUP STEPS:
+
+1. EXTRACT FILES:
+   - Extract all files from this zip to a new folder
+   - Open the folder in VS Code or Cursor
+
+2. CREATE VIRTUAL ENVIRONMENT (Recommended):
+   # Windows:
+   python -m venv venv
+   venv\Scripts\activate
+   
+   # macOS/Linux:
+   python3 -m venv venv
+   source venv/bin/activate
+
+3. INSTALL DEPENDENCIES:
+   pip install -r package-requirements.txt
+
+4. INSTALL TESSERACT OCR (for receipt scanning):
+   - Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
+   - macOS: brew install tesseract
+   - Linux: sudo apt-get install tesseract-ocr
+
+5. OPTIONAL - ADD OPENAI API KEY (for enhanced AI features):
+   - Create a .env file in the project root
+   - Add: OPENAI_API_KEY=your_openai_api_key_here
+
+6. RUN THE APPLICATION:
+   streamlit run app.py
+
+   The app will open at http://localhost:8501
+
+FEATURES INCLUDED:
+- Dashboard with real-time metrics
+- Inventory management
+- Receipt scanner with OCR
+- AI Assistant chatbot
+- AI demand forecasting
+- Smart reordering system
+- Expiry management
+- Drug interaction checker
+- Analytics and insights
+- Settings configuration
+
+TROUBLESHOOTING:
+- If port 8501 is busy: streamlit run app.py --server.port 8502
+- If Tesseract not found: Add tesseract to your system PATH
+- Missing packages: pip install package_name
+
+For questions or issues, refer to the Streamlit documentation at https://docs.streamlit.io

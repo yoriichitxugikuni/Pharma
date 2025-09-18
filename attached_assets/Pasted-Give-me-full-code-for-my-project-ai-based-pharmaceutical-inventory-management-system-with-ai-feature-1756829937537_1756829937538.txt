@@ -1,0 +1,94 @@
+Give me full code for my project ai based pharmaceutical inventory management system with ai features, it should be simple and beautiful, it should be different from current management system ,use python and sqllite and integrate frontend and backend add this additional features and i need working project without any error
+Demand Forecasting & Stock Prediction
+
+Use time series forecasting (ARIMA, Prophet, LSTMs) to predict future drug demand.
+
+Example: Predict that paracetamol demand will rise during flu season.
+
+2. Smart Reordering / Auto Procurement
+
+AI suggests or auto-places reorders when stock is about to run out.
+
+Optimizes supplier selection (chooses cheapest/fastest vendor using ML).
+
+3. Expiry & Wastage Management
+
+AI predicts which drugs might expire based on usage trends.
+
+Sends alerts: “Batch #124 of insulin will expire in 30 days. Use or return.”
+
+4. Drug Interaction & Substitution Alerts
+
+NLP model that checks for dangerous drug interactions.
+
+Suggests alternative drugs if stock is unavailable.
+
+5. Anomaly Detection (AI for Security & Fraud Detection)
+
+Detects suspicious activities like:
+
+Sudden bulk withdrawals (possible theft/misuse).
+
+Fake prescriptions (using AI-based image/text validation).
+
+6. AI-powered Chatbot Assistant
+
+Pharmacy staff can ask:
+
+“Do we have amoxicillin in stock?”
+
+“When will the next shipment arrive?”
+
+Chatbot pulls real-time answers.
+
+7. Consumption Pattern Analysis
+
+AI analyzes hospital/pharmacy usage trends.
+
+Example: “ICU consumes 40% of antibiotics → adjust supply chain.”
+
+8. Dynamic Pricing & Cost Optimization
+
+Suggests optimal pricing based on:
+
+Supplier costs, demand, expiry timeline.
+
+Discounts for near-expiry drugs.
+
+9. Image Recognition for Inventory
+
+Use AI + camera to scan shelves and auto-update stock.
+
+Detects mismatched labels or wrong placement.
+
+10. Personalized Alerts & Dashboard
+
+AI tailors alerts to different users:
+
+Pharmacist: “Stock running low.”
+
+Admin: “High wastage detected.”
+
+Supplier: “Reorder required.”
+
+11. AI-driven Fraudulent Prescription Detection
+
+Detect forged prescriptions using OCR + ML.
+
+Matches handwriting/text style against legitimate records.
+
+12. Predictive Maintenance (Supply Chain)
+
+AI predicts delivery delays by analyzing vendor performance + weather + traffic. add this features in my project  i am using cursor  
+
+
+
+
+
+
+
+
+
+
+
+
