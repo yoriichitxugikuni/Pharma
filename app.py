@@ -183,16 +183,25 @@ st.markdown("""
     .sidebar .stMarkdown h4,
     .sidebar .stMarkdown h5,
     .sidebar .stMarkdown h6 {
-        color: #212529 !important;
+        color: #000000 !important;
     }
     
-    /* Ensure all text is visible */
+    /* Force ALL sidebar text to be black */
+    .sidebar * {
+        color: #000000 !important;
+    }
+    
     .sidebar div[data-testid="stMarkdownContainer"] {
-        color: #212529 !important;
+        color: #000000 !important;
     }
     
     .sidebar div[data-testid="stMarkdownContainer"] * {
-        color: #212529 !important;
+        color: #000000 !important;
+    }
+    
+    .sidebar .stSelectbox label,
+    .sidebar .stSelectbox label p {
+        color: #000000 !important;
     }
     
     /* Sidebar/navigation animations */
@@ -519,23 +528,20 @@ def show_success_message(message):
     """, unsafe_allow_html=True)
 
 # Sidebar navigation with enhanced styling
-st.sidebar.markdown("""
-<div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
-    <div style="width: 40px; height: 40px; background: #F8F9FA; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
-        <div style="width: 20px; height: 30px; background: #F0F0F0; border-radius: 10px; position: relative; display: flex; align-items: center; justify-content: center;">
-            <div style="width: 12px; height: 20px; background: #E8E8E8; border-radius: 6px; position: relative;">
-                <div style="width: 2px; height: 2px; background: #FF0000; border-radius: 50%; position: absolute; top: 2px; left: 50%; transform: translateX(-50%);"></div>
-                <div style="width: 8px; height: 1px; background: #F8F9FA; position: absolute; bottom: 3px; left: 2px;"></div>
-                <div style="width: 6px; height: 1px; background: #E8E8E8; position: absolute; bottom: 2px; left: 3px;"></div>
+        st.sidebar.markdown("""
+        <div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
+            <div style="width: 40px; height: 40px; background: #F8F9FA; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                <div style="width: 24px; height: 16px; background: linear-gradient(90deg, #FF6B9D 0%, #FF8E53 100%); border-radius: 8px; position: relative; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <div style="position: absolute; top: 2px; left: 2px; width: 20px; height: 12px; background: linear-gradient(90deg, #FF6B9D 0%, #FF8E53 100%); border-radius: 6px; opacity: 0.8;"></div>
+                    <div style="position: absolute; top: 1px; left: 1px; width: 22px; height: 14px; background: linear-gradient(90deg, #FF6B9D 0%, #FF8E53 100%); border-radius: 7px; opacity: 0.6;"></div>
+                </div>
+            </div>
+            <div>
+                <h2 style="color: white; margin: 0; font-size: 1.2rem;">PharmaGPT</h2>
+                <p style="color: white; margin: 0; font-size: 0.8rem;">Smart Inventory Management</p>
             </div>
         </div>
-    </div>
-    <div>
-        <h2 style="color: white; margin: 0; font-size: 1.2rem;">PharmaGPT</h2>
-        <p style="color: white; margin: 0; font-size: 0.8rem;">Smart Inventory Management</p>
-    </div>
-</div>
-""", unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
 
 # Add a welcome message
 st.sidebar.markdown("""
