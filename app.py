@@ -154,6 +154,47 @@ st.markdown("""
         margin-bottom: 0.5rem !important;
     }
     
+    /* Force sidebar markdown text visibility */
+    .sidebar .stMarkdown {
+        color: #212529 !important;
+    }
+    
+    .sidebar .stMarkdown p {
+        color: #212529 !important;
+    }
+    
+    .sidebar .stMarkdown strong {
+        color: #212529 !important;
+    }
+    
+    .sidebar .stMarkdown em {
+        color: #212529 !important;
+    }
+    
+    /* Target all text elements in sidebar */
+    .sidebar * {
+        color: #212529 !important;
+    }
+    
+    /* Override any inherited colors */
+    .sidebar .stMarkdown h1,
+    .sidebar .stMarkdown h2,
+    .sidebar .stMarkdown h3,
+    .sidebar .stMarkdown h4,
+    .sidebar .stMarkdown h5,
+    .sidebar .stMarkdown h6 {
+        color: #212529 !important;
+    }
+    
+    /* Ensure all text is visible */
+    .sidebar div[data-testid="stMarkdownContainer"] {
+        color: #212529 !important;
+    }
+    
+    .sidebar div[data-testid="stMarkdownContainer"] * {
+        color: #212529 !important;
+    }
+    
     .sidebar .stButton button {
         background: #667eea !important;
         color: white !important;
@@ -559,17 +600,17 @@ page = st.sidebar.selectbox(
 
 # Add Chat Controls section
 st.sidebar.markdown("### 🔧 Chat Controls")
-if st.sidebar.button("🗑️ Clear Chat History", help="Clear all chat history"):
+if st.sidebar.button("🗑️ Clear Chat History", help="Clear all chat history", key="clear_chat"):
     st.session_state.messages = []
     st.success("Chat history cleared!")
 
 # Add Quick Actions section
 st.sidebar.markdown("### ⚡ Quick Actions")
-if st.sidebar.button("📊 Current Inventory Status", help="View current inventory overview"):
+if st.sidebar.button("📊 Current Inventory Status", help="View current inventory overview", key="inventory_status"):
     st.session_state.page = "Dashboard"
     st.rerun()
 
-if st.sidebar.button("⚠️ Check Alerts", help="View all active alerts"):
+if st.sidebar.button("⚠️ Check Alerts", help="View all active alerts", key="check_alerts"):
     st.session_state.page = "Dashboard"
     st.rerun()
 
