@@ -204,6 +204,19 @@ st.markdown("""
         color: #000000 !important;
     }
     
+    /* Force AI Assistant page sidebar text to be black */
+    .sidebar .stMarkdown h3 {
+        color: #000000 !important;
+    }
+    
+    .sidebar .stButton button {
+        color: #000000 !important;
+    }
+    
+    .sidebar .stButton button span {
+        color: #000000 !important;
+    }
+    
     /* Sidebar/navigation animations */
     [data-testid="stSidebar"] { animation: fadeIn 0.5s ease both; }
     /* Animate the Navigation Menu selectbox */
