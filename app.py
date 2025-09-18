@@ -144,7 +144,30 @@ st.markdown("""
         border-color: #b91c1c;
     }
     .sidebar .sidebar-content {
-        background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        background: #f8f9fa;
+    }
+    
+    .sidebar .stMarkdown h3 {
+        color: #212529 !important;
+        font-weight: 600 !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .sidebar .stButton button {
+        background: #667eea !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 6px !important;
+        padding: 0.5rem 1rem !important;
+        font-weight: 500 !important;
+        width: 100% !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .sidebar .stButton button:hover {
+        background: #5a6fd8 !important;
+        transform: translateY(-1px) !important;
     }
     /* Sidebar/navigation animations */
     [data-testid="stSidebar"] { animation: fadeIn 0.5s ease both; }
@@ -488,8 +511,8 @@ st.sidebar.markdown("""
 
 # Add a welcome message
 st.sidebar.markdown("""
-<div class="welcome-message" style="background: #f8f9fa; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-    <p style="margin: 0; font-size: 0.9rem; color: #666;">👋 Welcome to your AI-powered pharmaceutical inventory management system!</p>
+<div class="welcome-message" style="background: #f8f9fa; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; border: 1px solid #e9ecef;">
+    <p style="margin: 0; font-size: 0.9rem; color: #495057; font-weight: 500;">👋 Welcome to your AI-powered pharmaceutical inventory management system!</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -510,6 +533,22 @@ page = st.sidebar.selectbox(
     ["Dashboard", "Inventory Management", "Receipt Scanner", "AI Assistant", "AI Forecasting", "Smart Reordering", 
      "Expiry Management", "Drug Interactions", "Analytics", "Settings"]
 )
+
+# Add Chat Controls section
+st.sidebar.markdown("### 🔧 Chat Controls")
+if st.sidebar.button("🗑️ Clear Chat History", help="Clear all chat history"):
+    st.session_state.messages = []
+    st.success("Chat history cleared!")
+
+# Add Quick Actions section
+st.sidebar.markdown("### ⚡ Quick Actions")
+if st.sidebar.button("📊 Current Inventory Status", help="View current inventory overview"):
+    st.session_state.page = "Dashboard"
+    st.rerun()
+
+if st.sidebar.button("⚠️ Check Alerts", help="View all active alerts"):
+    st.session_state.page = "Dashboard"
+    st.rerun()
 
 def dashboard_page():
     # Enhanced header
