@@ -528,20 +528,20 @@ def show_success_message(message):
     """, unsafe_allow_html=True)
 
 # Sidebar navigation with enhanced styling
-        st.sidebar.markdown("""
-        <div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
-            <div style="width: 40px; height: 40px; background: #F8F9FA; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
-                <div style="width: 24px; height: 16px; background: linear-gradient(90deg, #FF6B9D 0%, #FF8E53 100%); border-radius: 8px; position: relative; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div style="position: absolute; top: 2px; left: 2px; width: 20px; height: 12px; background: linear-gradient(90deg, #FF6B9D 0%, #FF8E53 100%); border-radius: 6px; opacity: 0.8;"></div>
-                    <div style="position: absolute; top: 1px; left: 1px; width: 22px; height: 14px; background: linear-gradient(90deg, #FF6B9D 0%, #FF8E53 100%); border-radius: 7px; opacity: 0.6;"></div>
-                </div>
-            </div>
-            <div>
-                <h2 style="color: white; margin: 0; font-size: 1.2rem;">PharmaGPT</h2>
-                <p style="color: white; margin: 0; font-size: 0.8rem;">Smart Inventory Management</p>
-            </div>
+st.sidebar.markdown("""
+<div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
+    <div style="width: 40px; height: 40px; background: #F8F9FA; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+        <div style="width: 24px; height: 16px; background: linear-gradient(90deg, #FF6B9D 0%, #FF8E53 100%); border-radius: 8px; position: relative; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <div style="position: absolute; top: 2px; left: 2px; width: 20px; height: 12px; background: linear-gradient(90deg, #FF6B9D 0%, #FF8E53 100%); border-radius: 6px; opacity: 0.8;"></div>
+            <div style="position: absolute; top: 1px; left: 1px; width: 22px; height: 14px; background: linear-gradient(90deg, #FF6B9D 0%, #FF8E53 100%); border-radius: 7px; opacity: 0.6;"></div>
         </div>
-        """, unsafe_allow_html=True)
+    </div>
+    <div>
+        <h2 style="color: white; margin: 0; font-size: 1.2rem;">PharmaGPT</h2>
+        <p style="color: white; margin: 0; font-size: 0.8rem;">Smart Inventory Management</p>
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
 # Add a welcome message
 st.sidebar.markdown("""
