@@ -1,4 +1,10 @@
-# 🚀 PharmaGPT - AI Pharmaceutical Inventory Management
+# 🏥 PharmaGPT - AI Pharmaceutical Inventory Management
+
+<div align="center">
+  <img src="https://img.shields.io/badge/🏥-PharmaGPT-667eea?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0idXJsKCNncmFkaWVudCkiLz4KPHBhdGggZD0iTTEwIDEySDMwVjI4SDEwVjEyWiIgZmlsbD0iI0Y4RjlGQSIvPgo8cGF0aCBkPSJNMTIgMTRIMjhWMjZIMTJWMTRaIiBmaWxsPSIjRjBGMEYwIi8+CjxwYXRoIGQ9Ik0xOCAxNkgyMlYyMEgxOFYxNloiIGZpbGw9IiNGRjAwMDAiLz4KPHBhdGggZD0iTTE0IDIySDI2VjI0SDE0VjIyWiIgZmlsbD0iI0Y4RjlGQSIvPgo8cGF0aCBkPSJNMTYgMjRIMjRWMjZIMTZWMjRaIiBmaWxsPSIjRjBGMEYwIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2NjdlZWEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNzY0YmEyIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+" alt="PharmaGPT Logo" width="60" height="60"/>
+  <br>
+  <strong>Smart Inventory Management</strong>
+</div>
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.39.0-red.svg)](https://streamlit.io)
