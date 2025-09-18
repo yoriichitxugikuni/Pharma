@@ -471,9 +471,18 @@ def show_success_message(message):
 
 # Sidebar navigation with enhanced styling
 st.sidebar.markdown("""
-<div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; margin-bottom: 2rem;">
-    <h2 style="color: white; margin: 0;">🏥 PharmaGPT</h2>
-    <p style="color: white; margin: 0; font-size: 0.9rem;">Smart Inventory Management</p>
+<div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
+    <div style="width: 40px; height: 40px; background: #F8F9FA; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+        <div style="width: 25px; height: 15px; background: #F0F0F0; border-radius: 4px; position: relative;">
+            <div style="width: 4px; height: 4px; background: #FF0000; border-radius: 50%; position: absolute; top: 1px; left: 50%; transform: translateX(-50%);"></div>
+            <div style="width: 10px; height: 1px; background: #F8F9FA; position: absolute; bottom: 2px; left: 2.5px;"></div>
+            <div style="width: 8px; height: 1px; background: #F0F0F0; position: absolute; bottom: 1px; left: 3.5px;"></div>
+        </div>
+    </div>
+    <div>
+        <h2 style="color: white; margin: 0; font-size: 1.2rem;">PharmaGPT</h2>
+        <p style="color: white; margin: 0; font-size: 0.8rem;">Smart Inventory Management</p>
+    </div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -506,7 +515,7 @@ def dashboard_page():
     # Enhanced header
     st.markdown("""
     <div class="main-header">
-        <h1>📊 AI Pharmaceutical Inventory Dashboard</h1>
+        <h1>📊 Dashboard</h1>
         <p>Real-time insights and smart analytics for your pharmacy</p>
     </div>
     """, unsafe_allow_html=True)
