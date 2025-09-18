@@ -1,0 +1,11 @@
+id,drug_name,category,manufacturer,batch_number,current_stock,minimum_stock,unit_price,expiry_date,supplier_name
+2,Amoxicillin 250mg,Antibiotics,MediSupply,AMX001,180,30,124.5,2025-04-20,MediSupply Co
+4,Aspirin 75mg,Cardiovascular,PharmaCorp,ASP001,150,25,24.9,2025-08-25,PharmaCorp Inc
+9,Atorvastatin 20mg,Cardiovascular,HealthDist,ATO001,175,30,99.6,2025-11-18,HealthDist Ltd
+7,Ciprofloxacin 500mg,Antibiotics,PharmaCorp,CIP001,90,20,186.75,2025-07-08,PharmaCorp Inc
+6,Insulin Rapid,Diabetes,HealthDist,INS001,0,10,3735.0,2025-02-15,HealthDist Ltd
+3,Metformin 500mg,Diabetes,HealthDist,MET001,320,40,62.25,2025-12-10,HealthDist Ltd
+8,Omeprazole 20mg,Gastrointestinal,MediSupply,OME001,200,35,70.55,2025-09-12,MediSupply Co
+1,Paracetamol 500mg,Analgesics,PharmaCorp,PCM001,250,50,20.75,2025-06-15,PharmaCorp Inc
+10,Prednisolone 5mg,Steroids,PharmaCorp,PRE001,80,15,78.85,2025-05-22,PharmaCorp Inc
+5,Salbutamol Inhaler,Respiratory,MediSupply,SAL001,45,15,1037.5,2025-03-30,MediSupply Co
