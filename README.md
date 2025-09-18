@@ -3,10 +3,9 @@
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.39.0-red.svg)](https://streamlit.io)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Deploy](https://img.shields.io/badge/Deploy-Render-00C7B7.svg)](https://render.com)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-222222.svg)](https://yoriichitxugikuni.github.io/Pharma)
 
-**🌐 Live Demo**: [Deployed on Render](https://pharmagpt.onrender.com) | **📄 Documentation**: [GitHub Pages](https://yoriichitxugikuni.github.io/Pharma)
+**📄 Documentation**: [GitHub Pages](https://yoriichitxugikuni.github.io/Pharma)
 
 An enterprise-grade AI-powered pharmaceutical inventory management system featuring advanced analytics, machine learning-driven demand forecasting, and intelligent reordering capabilities. Built for pharmacies, hospitals, and healthcare facilities to optimize inventory management and reduce wastage.
 
@@ -102,9 +101,8 @@ PharmaGPT/
 ├── 💾 Data Layer
 │   ├── database.py            # SQLite database management
 │   └── pharma_inventory.db    # Database file
-├── 🚀 Deployment
+├── 🚀 Configuration
 │   ├── requirements.txt       # Python dependencies
-│   ├── Procfile              # Render deployment
 │   ├── runtime.txt           # Python version
 │   └── index.html            # GitHub Pages landing
 └── 📚 Documentation
@@ -119,40 +117,54 @@ PharmaGPT/
 - **AI/ML**: scikit-learn, pandas, numpy
 - **Visualization**: Plotly, interactive charts
 - **OCR**: Tesseract, Pillow
-- **Deployment**: Render, GitHub Pages
+- **Deployment**: Local development, GitHub Pages
 
 ## ⚡ Performance Notes
 - Light theme only, no external JS
 - Cached DB/models using `st.cache_resource`
 - Charts/tables rendered only when needed
-- Dependencies tuned for small Render free VMs
+- Optimized for local development and testing
 
-## 🚀 Deploy to Render (Free Plan)
+## 🖥️ Local Development
 
-### Quick Deploy
-1. **Fork this repository**
-2. **Connect to Render**:
-   - Go to [Render Dashboard](https://dashboard.render.com)
-   - Click "New +" → "Web Service"
-   - Connect your GitHub repository
-   - Use these settings:
-     ```
-     Name: pharmagpt
-     Runtime: Python 3
-     Build Command: pip install -r requirements.txt
-     Start Command: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
-     ```
-   - **Environment Variables**:
-     ```
-     PYTHON_VERSION=3.11.9
-     ```
-3. **Deploy** - Render will automatically build and deploy your app!
+### Prerequisites
+- Python 3.11+ (recommended)
+- Git
+- Modern web browser (Chrome, Firefox, Safari, Edge)
 
-### Render Optimization
-- ✅ **Memory Optimized** - Uses minimal RAM (512MB free tier)
-- ✅ **Fast Startup** - Optimized dependencies and caching
-- ✅ **Auto-scaling** - Handles traffic spikes automatically
-- ✅ **Free SSL** - HTTPS enabled by default
+### Installation Steps
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yoriichitxugikuni/Pharma.git
+   cd Pharma
+   ```
+
+2. **Create virtual environment** (recommended):
+   ```bash
+   python -m venv venv
+   # Windows
+   venv\Scripts\activate
+   # macOS/Linux
+   source venv/bin/activate
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the application**:
+   ```bash
+   streamlit run app.py
+   ```
+
+5. **Open your browser** and go to `http://localhost:8501`
+
+### Local Development Benefits
+- ✅ **Full Control** - Complete access to all features
+- ✅ **Fast Development** - Instant code changes and reloads
+- ✅ **Debug Mode** - Easy debugging and error tracking
+- ✅ **Custom Configuration** - Modify settings as needed
 
 ## 📊 Key Metrics & Benefits
 
@@ -191,7 +203,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Built with ❤️ using [Streamlit](https://streamlit.io)
 - AI/ML powered by [scikit-learn](https://scikit-learn.org)
 - Data visualization with [Plotly](https://plotly.com)
-- Deployed on [Render](https://render.com)
+- Optimized for local development and testing
 
 ## 📞 Support
 
