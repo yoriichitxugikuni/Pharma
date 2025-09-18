@@ -195,44 +195,6 @@ st.markdown("""
         color: #212529 !important;
     }
     
-    .sidebar .stButton button {
-        background: #667eea !important;
-        color: white !important;
-        border: none !important;
-        border-radius: 6px !important;
-        padding: 0.5rem 1rem !important;
-        font-weight: 500 !important;
-        width: 100% !important;
-        margin-bottom: 0.5rem !important;
-        text-align: left !important;
-    }
-    
-    .sidebar .stButton button:hover {
-        background: #5a6fd8 !important;
-        transform: translateY(-1px) !important;
-        color: white !important;
-    }
-    
-    .sidebar .stButton button:focus {
-        color: white !important;
-    }
-    
-    .sidebar .stButton button:active {
-        color: white !important;
-    }
-    
-    /* Force button text visibility */
-    .sidebar .stButton button span {
-        color: white !important;
-    }
-    
-    .sidebar .stButton button div {
-        color: white !important;
-    }
-    
-    .sidebar .stButton button p {
-        color: white !important;
-    }
     /* Sidebar/navigation animations */
     [data-testid="stSidebar"] { animation: fadeIn 0.5s ease both; }
     /* Animate the Navigation Menu selectbox */
@@ -600,21 +562,6 @@ page = st.sidebar.selectbox(
      "Expiry Management", "Drug Interactions", "Analytics", "Settings"]
 )
 
-# Add Chat Controls section
-st.sidebar.markdown("### 🔧 Chat Controls")
-if st.sidebar.button("🗑️ Clear Chat History", help="Clear all chat history", key="clear_chat"):
-    st.session_state.messages = []
-    st.success("Chat history cleared!")
-
-# Add Quick Actions section
-st.sidebar.markdown("### ⚡ Quick Actions")
-if st.sidebar.button("📊 Current Inventory Status", help="View current inventory overview", key="inventory_status"):
-    st.session_state.page = "Dashboard"
-    st.rerun()
-
-if st.sidebar.button("⚠️ Check Alerts", help="View all active alerts", key="check_alerts"):
-    st.session_state.page = "Dashboard"
-    st.rerun()
 
 def dashboard_page():
     # Enhanced header
