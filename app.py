@@ -163,11 +163,34 @@ st.markdown("""
         font-weight: 500 !important;
         width: 100% !important;
         margin-bottom: 0.5rem !important;
+        text-align: left !important;
     }
     
     .sidebar .stButton button:hover {
         background: #5a6fd8 !important;
         transform: translateY(-1px) !important;
+        color: white !important;
+    }
+    
+    .sidebar .stButton button:focus {
+        color: white !important;
+    }
+    
+    .sidebar .stButton button:active {
+        color: white !important;
+    }
+    
+    /* Force button text visibility */
+    .sidebar .stButton button span {
+        color: white !important;
+    }
+    
+    .sidebar .stButton button div {
+        color: white !important;
+    }
+    
+    .sidebar .stButton button p {
+        color: white !important;
     }
     /* Sidebar/navigation animations */
     [data-testid="stSidebar"] { animation: fadeIn 0.5s ease both; }
